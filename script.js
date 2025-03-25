@@ -5,7 +5,7 @@ document.getElementById('mostrarMensagem').addEventListener('click', function() 
     
     if (mensagem.style.display === 'none' || !mensagem.style.display) {
         mensagem.style.display = 'block';
-        botalink.style.display = 'block'
+        botalink.style.display = 'block';
         document.body.style.backgroundImage = "url('imagens/loira.jpeg')"; 
         document.body.style.backgroundSize = "cover"; 
         document.body.style.backgroundPosition = "center"; 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="teste">
+        <div class="meio">
+            <div class="question">
+                <h2>quer namo?</h2>
+            </div>
+            <div class="divbotoes">    
+                <div class="containerBtns">
+                    <button id="btnsim" class="qbtn sim">SIM</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <button id="btnnao" class="qbtn nao">NÃO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const nao = document.getElementById('btnnao');
+        const sim = document.getElementById('btnsim')
+
+        sim.addEventListener('click', function(){
+            alert("ebaaa")
+        } )
+
+        nao.addEventListener('mouseover', function(){
+            const newX = Math.random() * window.innerWidth;
+            const newY = Math.random() * window.innerHeight;
+
+            nao.style.left = `${newX}px`;
+            nao.style.top = `${newY}px`;
+        } )
+        nao.addEventListener('click', function(){
+            const newX = Math.random() * window.innerWidth;
+            const newY = Math.random() * window.innerHeight;
+
+            nao.style.left = `${newX}px`;
+            nao.style.top = `${newY}px`;
+        } )
+    </script>
+</body>
+</html>

@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: rgb(82, 11, 88);
@@ -6,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
     margin: 0;
 }
 
@@ -22,7 +29,7 @@ h1 {
     color: #ff00cc;
 }
 
-button {
+#mostrarMensagem {
     background-color: rgb(163, 24, 255);
     color: white;
     border: none;
@@ -32,6 +39,63 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+#mostrarMensagem:hover {
     background-color: #f8306f;
+}
+
+.teste {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.question {
+    background: purple;
+    width:100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+.divbotoes{
+    /* background-color: green; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qbtn {
+    font-weight: bold;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    height: 50px;
+    width: 120px;
+    display: block;
+}
+.qbtn:hover {
+    background-color: rgb(119, 173, 37);
+}
+.nao{
+    background-color: #f8306f;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+.nao:hover{
+    background-color: #9e2249;
+}
+.containerBtns{
+    /* background-color: orange; */
+    height: 70%;
 }

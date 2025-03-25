@@ -9,11 +9,11 @@ document.getElementById('mostrarMensagem').addEventListener('click', function() 
         document.body.style.backgroundPosition = "center"; 
         
         // Alterar o texto do botão
-        botao.innerText = 'Esconder Mensagem';
+        botao.innerText = 'conder';
     } else {
         mensagem.style.display = 'none';
         
         // Alterar o texto do botão de volta
-        botao.innerText = 'Mostrar Mensagem';
+        botao.innerText = 'mostrar msg';
     }
 });
